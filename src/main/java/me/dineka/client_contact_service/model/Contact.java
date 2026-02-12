@@ -2,7 +2,9 @@ package me.dineka.client_contact_service.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Objects;
 
@@ -10,6 +12,8 @@ import java.util.Objects;
 @Table(name = "contact")
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
+@Getter
 public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
